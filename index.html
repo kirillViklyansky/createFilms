@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-name">Films library </h1>
+        <div class="header-add" id="header-btn">
+            <button class="header-add-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add new film
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <form class="main-form" id="add-new" action="">
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="title">TITLE<br>
+                    <input type="text" class="main-form-p-lable_input" id="title">
+                </label>
+            </p>
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="year">YEAR<BR>
+                    <input type="text" class="main-form-p-lable_input" id="year">
+                </label>
+            </p>
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="country">COUNRTY<br>
+                    <input type="text" class="main-form-p-lable_input" id="country">
+                </label>
+            </p>
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="gener">GENER<br>
+                    <input type="text" class="main-form-p-lable_input" id="gener">
+                </label>
+            </p>
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="poster"> POSTER <br>
+                    <input type="text" class="main-form-p-lable_input" id="poster">
+                </label>
+            </p>
+            <p class="main-form-p">
+                <label class="main-form-p-lable" for="description">DESCRIPTION <br>
+                    <textarea name="" id="description" class="main-form-p-lable_area" rows="30"></textarea>
+                </label>
+            </p>
+            <div class="main-form-buttons">
+                <button class='main-form-buttons_cancel'>Cancel</button>
+                <button type="submit" class='main-form-buttons_add'>Add</button>
+            </div>
+        </form>
+
+        <div id="div"></div>
+
+        <div class="main-film" id="main-film">
+            <div class="main-film-img" id="main-film-img">
+                <img class="main-film-img_image" src="https://www.film.ru/sites/default/files/images/1(70).jpg" alt="picture">
+            </div>
+            <div class="main-film-content">
+                <h2 class="main-film-content_h2">Martian</h2>
+                <div class="main-film-content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    perspiciatis, quas iste nemo provident reiciendis recusandae magni dolorem odit natus iusto laborum
+                    sequi molestias dolores exercitationem voluptatibus quibusdam totam. Nesciunt!
+                </div>
+                <div class="main-film-content-info">
+                    <ul>
+                        <li>
+                            <div class="main-film-content-info-div"><span class="main-film-content-info-div_span">
+                                    COUNRTY:</span>USA</div>
+                        </li>
+                        <li>
+                            <div class="main-film-content-info-div"><span class="main-film-content-info-div_span">
+                                    YEAR:</span>USA</div>
+                        </li>
+                        <li>
+                            <div class="main-film-content-info-div"><span class="main-film-content-info-div_span">
+                                    GENER:</span>USA</div>
+                        </li>
+                        <li>
+                            <div class="main-film-content-info-div"><span class="main-film-content-info-div_span">
+                                    ACTORS:</span>USA</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-film-content-button">
+                    <button class="main-film-content-button-delete">Delete</button>
+                    <button class="main-film-content-button-edit">edit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+</body>
+
+</html>
